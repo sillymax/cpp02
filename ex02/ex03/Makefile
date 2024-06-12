@@ -1,7 +1,7 @@
 # Makefile for cpp02/ex03
 
 # Program name
-NAME := talking
+NAME := ihatethis
 
 # Directory paths
 SRC_DIR := src

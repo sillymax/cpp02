@@ -3,20 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sillymax <sillymax@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ychng <ychng@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 18:35:28 by sillymax          #+#    #+#             */
-/*   Updated: 2024/06/11 22:46:07 by sillymax         ###   ########.fr       */
+/*   Created: 2024/06/12 10:14:00 by ychng             #+#    #+#             */
+/*   Updated: 2024/06/12 13:22:24 by ychng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.hpp"
+#include "Point.hpp"
+#include <iostream>
 
 int main(void)
 {
-	Point a(10.0f, 0.0f);
-	Point b(0.0f, 0.0f);
-	Point c(0.0f, 0.0f);
+	Point a(0, 0);
+	Point b(10, 30);
+	Point c(20, 0);
+	Point point(20, 0);
 
-	Point point(5, 0);
+	if (bsp(a, b, c, point))
+		std::cout << "inside" << std::endl;
+	else
+		std::cout << "outside" << std::endl;
 }
